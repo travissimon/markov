@@ -29,4 +29,10 @@ func Test_Creation(t *testing.T) {
 	if link.Suffixes == nil {
 		t.Errorf("Link suffix is nil")
 	}
+
+	suffix := newSuffix()
+	if suffix == nil {
+		t.Errorf("nil suffix")
+	}
+
 }
